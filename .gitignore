@@ -1,0 +1,25 @@
+# Ignore Python virtual environment
+venv/
+env/
+
+# Ignore environment variables file
+.env
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore Faiss index files if you store them
+*.index
+
+# Ignore log files
+*.log
+
+# Ignore VSCode workspace settings (optional)
+.vscode/
+
+# Ignore system files
+Thumbs.db 
+
+# Ignore Jupyter Notebook checkpoints (if you use Jupyter)
+.ipynb_checkpoints/
