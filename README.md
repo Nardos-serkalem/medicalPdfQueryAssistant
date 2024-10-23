@@ -18,20 +18,54 @@ This project extracts text from a PDF document, processes it into chunks, genera
   - `requests`
   - `python-dotenv`
 
+
+Here's the complete installation section for your GitHub README, formatted as requested:
+
+markdown
+Copy code
 ## Installation
 
-1. Clone the repository:
+Follow these steps to set up the project on your local machine:
 
-   ```bash
-   git clone https://github.com/yourusername/repository-name.git
-   cd repository-name
+### Clone the repository
 
-   python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```bash
+git clone https://github.com/yourusername/pdf-query-bot.git
+cd pdf-query-bot
+Create a virtual environment
 
+
+bash
+Copy code
+python -m venv venv
+Activate the virtual environment:
+
+On macOS and Linux:
+
+bash
+Copy code
+source venv/bin/activate
+On Windows:
+
+bash
+Copy code
+venv\Scripts\activate
+Install the dependencies
+Once the virtual environment is activated, install the required dependencies:
+
+bash
+Copy code
 pip install -r requirements.txt
+Set up your environment variables
+Create a .env file in the root directory of the project.
 
+Add your Hugging Face API key to the .env file:
+
+makefile
+Copy code
 HUGGING_FACE_API_KEY=your_hugging_face_api_key
+
+
 
 
 
