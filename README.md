@@ -1,15 +1,29 @@
-**Medical PDF Query Assistant using FAISS and GPT-2**
+# Medical PDF Text Extraction and Query Response System
 
-This project is a Medical PDF Query Assistant that extracts text from a PDF file, divides it into smaller chunks, generates embeddings for those chunks using a transformer model (all-MiniLM-L6-v2), stores the embeddings in a FAISS index, and allows users to query the PDF content. The bot uses the Hugging Face GPT-2 model to generate responses based on the most relevant context retrieved from the PDF.
+This project extracts text from a PDF document, processes it into chunks, generates embeddings using a pre-trained model, and stores these embeddings in a FAISS index for efficient retrieval. The system allows users to query information related to the extracted text and receive generated responses using the Hugging Face API.
 
-Features
+## Features
 
-PDF Text Extraction
-Text Chunking
-Embedding Generation
-FAISS Indexing 
-Query-Answering
+- Extracts text from PDF files.
+- Splits extracted text into manageable chunks.
+- Generates embeddings for each text chunk using Sentence Transformers.
+- Stores embeddings in a FAISS index for fast similarity searches.
+- Queries the stored embeddings and generates a response based on the retrieved context using the Hugging Face API.
 
-Requirements
-Hugging Face API key (to use GPT-2 for generating responses)
+## Requirements
+- Libraries:
+  - `PyPDF2`
+  - `sentence-transformers`
+  - `faiss-cpu` 
+  - `requests`
+  - `python-dotenv`
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/repository-name.git
+   cd repository-name
+
 
