@@ -26,4 +26,12 @@ This project extracts text from a PDF document, processes it into chunks, genera
    git clone https://github.com/yourusername/repository-name.git
    cd repository-name
 
+   python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+pip install -r requirements.txt
+
+HUGGING_FACE_API_KEY=your_hugging_face_api_key
+
+
 
