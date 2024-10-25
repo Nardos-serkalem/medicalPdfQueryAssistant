@@ -18,7 +18,7 @@ This project extracts text from a PDF document, processes it into chunks, genera
   - `requests`
   - `python-dotenv`
  
-cd pdf-query-bot
+
 
 
 
