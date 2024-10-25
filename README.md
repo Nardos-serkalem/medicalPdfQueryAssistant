@@ -17,13 +17,7 @@ This project extracts text from a PDF document, processes it into chunks, genera
   - `faiss-cpu` 
   - `requests`
   - `python-dotenv`
-    ## Installation
-
-
-### Clone the repository
-
-```bash
-git clone https://github.com/yourusername/pdf-query-bot.git
+ 
 cd pdf-query-bot
 
 
