@@ -62,7 +62,7 @@ def generate_response(query, index, text_chunks):
 
         retrieved_texts = [text_chunks[i] for i in I[0]]
         context = ' '.join(retrieved_texts)
-        print(f"Context: {context[:500]}...\n")  # Show the first 500 characters of context
+        print(f"Context: {context[:500]}...\n") 
 
         # making context for the Hugging Face API
         payload = {
