@@ -42,7 +42,7 @@ def embed_text_chunks(text_chunks):
 def store_embeddings_in_faiss(embeddings):
     try:
         d = embeddings.shape[1] 
-        index = faiss.IndexFlatIP(d)  #(cosine similarity) search
+        index = faiss.IndexFlatIP(d)  
         index.add(embeddings)
         print(f"Embeddings stored in Faiss index with dimension {d}")
         return index
